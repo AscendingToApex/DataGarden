@@ -1,210 +1,336 @@
 # 🧠 Git & GitHub Reference Guide
 
 ## 📚 Table of Contents
-- [📁 1. Creating a Repository](#-1-creating-a-repository)
-- [🔁 2. Standard Git Workflow](#-2-standard-git-workflow)
-- [🔧 3. Common Git Commands](#-3-common-git-commands)
-- [📚 4. Git Glossary](#-4-git-glossary)
-- [🚨 5. Common Git Errors & Fixes](#-5-common-git-errors--fixes)
-- [⚡ 6. Time-Saving Git Aliases](#-6-time-saving-git-aliases)
-- [🧽 7. Sample .gitignore](#-7-sample-gitignore)
-- [🧩 8. Visual Branch Workflow](#-8-visual-branch-workflow)
+
+* [🛠 Initial Setup on Windows](#-initial-setup-on-windows)
+* [🔧 Git & GitHub Configuration](#-git--github-configuration)
+* [📁 Creating Repositories](#-creating-repositories)
+* [🔁 Standard Git Workflow](#-standard-git-workflow)
+* [🚀 Working with Remotes](#-working-with-remotes)
+* [🛑 Ignoring Files with .gitignore](#-ignoring-files-with-gitignore)
+* [🧪 Branching, Merging, and Collaboration](#-branching-merging-and-collaboration)
+* [🧯 Troubleshooting & Undoing Mistakes](#-troubleshooting--undoing-mistakes)
+* [🔍 Exploring History & Comparing Changes](#-exploring-history--comparing-changes)
+* [📓 Git Log Filtering & Insights](#-git-log-filtering--insights)
+* [🧠 Common Git Commands](#-common-git-commands)
+* [📚 Glossary](#-glossary)
 
 ---
 
-## 📁 1. Creating a Repository
+## 🛠 Initial Setup on Windows
 
-### 🟦 On GitHub (Remote)
+1. Open **Git Bash**
+2. Run `git --version` to verify installation
+3. Configure prompt:
 
-1. Go to [https://github.com](https://github.com)
-2. Click **New Repository**
-3. Fill in:
-   - **Repository name**
-   - (Optional) Description
-   - Choose **Public** or **Private**
-4. (Optional) Initialize with README, .gitignore, or license
-5. Click **Create repository**
+   * Use `cd` to move to home directory
+   * Run `start .` to open File Explorer
+   * Move `bash_profile` and `terminal-config` to home directory
+   * Use Git Bash to rename:
 
-### 💻 On Local Machine
+     ```bash
+     mv terminal-config .terminal-config
+     mv bash_profile .bash_profile
+     ```
+   * Restart Git Bash for changes to take effect
+   * Optional: Right-click Git Bash → Options → Background to customize appearance
 
-**Option A: Clone Existing GitHub Repo**
+---
+
+## 🔧 Git & GitHub Configuration
+
+### For Personal Computers
+
 ```bash
-git clone https://github.com/your-username/your-repo.git
-cd your-repo
+git config --global user.name "Your Name"
+git config --global user.email "your@email.com"
 ```
 
-**Option B: Start a New Repo Locally**
+### For Shared Computers (repo-specific)
+
 ```bash
-mkdir your-repo
-cd your-repo
+git config user.name "Your Name"
+git config user.email "your@email.com"
+```
+
+### On GitHub.com
+
+* Profile → Settings → Emails
+* Set a primary email and check "Keep my email addresses private"
+
+### Change Default Editor
+
+```bash
+git config --global core.editor "code --wait" # VS Code example
+```
+
+More editors: [GitHub docs](https://help.github.com/en/github/using-git/associating-text-editors-with-git)
+
+---
+
+## 📁 Creating Repositories
+
+### Local
+
+```bash
+mkdir project-name
+cd project-name
 git init
 ```
 
-To connect to GitHub:
+* Use `ls -a` or `dir /a` to verify hidden `.git` folder
+* Create initial file: `touch README.md`
+
+### GitHub
+
+1. Go to [github.com](https://github.com)
+2. Create new repository
+3. Do **not** initialize with README if one exists locally
+
+### Link Local to Remote
+
 ```bash
-git remote add origin https://github.com/your-username/your-repo.git
+git remote add origin https://github.com/yourname/repo.git
+git push -u origin main
 ```
 
 ---
 
-## 🔁 2. Standard Git Workflow
+## 🔁 Standard Git Workflow
 
-1. **Create or Modify Files**
-2. **Check Status**
-   ```bash
-   git status
-   ```
-3. **Stage Changes**
-   ```bash
-   git add .
-   ```
-4. **Commit Changes**
-   ```bash
-   git commit -m "Your message"
-   ```
-5. **Push to GitHub**
-   ```bash
-   git push origin main
-   ```
-6. **Pull Updates from GitHub**
-   ```bash
-   git pull origin main
-   ```
-
----
-
-## 🔧 3. Common Git Commands
-
-| Command | Description |
-|--------|-------------|
-| `git init` | Initialize a Git repo |
-| `git clone <url>` | Copy a remote repo |
-| `git status` | See modified/staged files |
-| `git add .` | Stage all changes |
-| `git commit -m "msg"` | Save a snapshot |
-| `git push origin main` | Upload changes to GitHub |
-| `git pull origin main` | Get latest changes |
-| `git branch` | Show local branches |
-| `git checkout -b <name>` | Create and switch branch |
-| `git checkout <name>` | Switch branches |
-| `git merge <name>` | Merge into current branch |
-| `git log` | Show commit history |
-| `git remote -v` | Show remotes |
-| `git reset` | Undo local changes |
-| `git stash` | Temporarily save changes |
-
----
-
-## 📚 4. Git Glossary
-
-| Term | Description | When to Use |
-|------|-------------|-------------|
-| **Repository (repo)** | Git-tracked project folder | Always |
-| **Commit** | Saved code snapshot | Every change |
-| **Stage (add)** | Prepare file for commit | Before committing |
-| **Push** | Send commits to GitHub | Sync with remote |
-| **Pull** | Fetch + merge from GitHub | Stay updated |
-| **Branch** | Independent code path | Feature or fix |
-| **Merge** | Combine branches | Finalize feature |
-| **Clone** | Copy repo from GitHub | Start new local copy |
-| **Checkout** | Switch code state or branch | Task switching |
-| **Stash** | Save WIP changes | Mid-task switch |
-| **Origin** | Default remote name | Used in push/pull |
-| **HEAD** | Current repo position | Used in reset/checkout |
-
----
-
-## 🚨 5. Common Git Errors & Fixes
-
-### 🔴 Error: *"fatal: not a git repository"*
-**Fix:** Navigate into a Git repo or run `git init`
-
----
-
-### 🔴 Error: *Merge conflict*
-**Fix:**
-1. Open file and resolve the `<<<<<<<` conflict markers
-2. Run `git add .`
-3. Run `git commit -m "Resolve conflict"`
-
----
-
-### 🔴 Error: *Accidentally committed to the wrong branch*
-**Fix:**
 ```bash
-git checkout correct-branch
-git cherry-pick <commit-hash>
-git checkout wrong-branch
-git reset --hard HEAD~1
+git status           # Check changes
+git add .            # Stage all changes
+git commit -m "Message"  # Save snapshot
+git push origin main # Push to GitHub
+git pull origin main # Sync changes
 ```
 
 ---
 
-### 🔴 Error: *Forgot to add a file to last commit*
-**Fix:**
+## 🚀 Working with Remotes
+
+### Push Existing Repo
+
 ```bash
-git add missed-file
+git remote add origin <url>
+git push -u origin main
+```
+
+### Pull Existing Repo
+
+```bash
+git remote add origin <url>
+git fetch
+git pull origin main
+```
+
+### Clone Repo
+
+```bash
+git clone <url> [new-folder-name]
+```
+
+### Change Remote
+
+```bash
+git remote set-url origin <new-url>
+```
+
+### Rename Original Remote for Forking
+
+```bash
+git remote rename origin upstream
+git remote add origin <your-fork-url>
+```
+
+---
+
+## 🛑 Ignoring Files with .gitignore
+
+* GitHub allows adding templates during repo creation
+* Customize manually:
+
+```bash
+# Ignore all .log files
+*.log
+
+# Ignore node_modules
+node_modules/
+```
+
+* GitHub’s templates: [github.com/github/gitignore](https://github.com/github/gitignore)
+
+---
+
+## 🧪 Branching, Merging, and Collaboration
+
+### Create & Switch Branch
+
+```bash
+git checkout -b feature-branch
+```
+
+### Push Branch
+
+```bash
+git push origin feature-branch
+```
+
+### Merge Branches
+
+```bash
+git checkout main
+git merge feature-branch
+git push
+```
+
+### Delete Branch
+
+```bash
+git branch -d feature-branch
+```
+
+### Visualize Branches
+
+```bash
+git log --graph --oneline --all
+```
+
+### Forking Workflow
+
+* Fork on GitHub
+* Clone locally
+* Add upstream remote:
+
+```bash
+git remote add upstream <original-repo-url>
+```
+
+---
+
+## 🧯 Troubleshooting & Undoing Mistakes
+
+### Undo Last Commit Message
+
+```bash
 git commit --amend
 ```
 
----
-
-## ⚡ 6. Time-Saving Git Aliases
-
-Add these to save typing:
+### Unstage File
 
 ```bash
-git config --global alias.st status
-git config --global alias.co checkout
-git config --global alias.br branch
-git config --global alias.cm "commit -m"
-git config --global alias.last "log -1 HEAD"
+git reset HEAD <file>
 ```
 
-Now use:
+### Discard Local Changes
+
 ```bash
-git st
-git co main
-git cm "initial commit"
+git checkout <file>
+```
+
+### Reset to Previous Commit
+
+```bash
+git log
+# Copy hash
+
+git checkout <hash> <file>
 ```
 
 ---
 
-## 🧽 7. Sample .gitignore
+## 🔍 Exploring History & Comparing Changes
 
-```gitignore
-# Node.js
-node_modules/
-.env
+```bash
+git log --oneline
 
-# Python
-__pycache__/
-*.pyc
-.env
+# Filter commits
+git log --author="Name"
+git log --since=1.week
 
-# macOS
-.DS_Store
+# Compare changes
+git diff <file>
+git diff --staged
 
-# VS Code
-.vscode/
+git show HEAD~1
+```
+
+### Check Remote Status
+
+```bash
+git fetch
+git status
 ```
 
 ---
 
-## 🧩 8. Visual Branch Workflow
+## 📓 Git Log Filtering & Insights
 
-```
-main ──●──●──●──────────────▶ deployed
-          \
-feature-x ─●──●──●─┐
-                    \
-                     └─▶ Merge to main
+```bash
+git shortlog
+
+# Commits by author since 30 days
+git log --author="Alice" --since=30.days
+
+# Search commit messages
+git log --grep="bug fix"
 ```
 
 ---
 
-🧠 **Pro Tips**
-- Pull before pushing to avoid conflicts.
-- Use feature branches for isolated work.
-- Write clear commit messages.
-- Keep your main branch clean and deployable.
+## 🧠 Common Git Commands
+
+| Command        | Description       |
+| -------------- | ----------------- |
+| `git init`     | Start local repo  |
+| `git clone`    | Copy from GitHub  |
+| `git add`      | Stage changes     |
+| `git commit`   | Save snapshot     |
+| `git status`   | Check file state  |
+| `git diff`     | Show differences  |
+| `git push`     | Send to GitHub    |
+| `git pull`     | Get updates       |
+| `git branch`   | List branches     |
+| `git checkout` | Switch branch     |
+| `git merge`    | Combine branches  |
+| `git log`      | History           |
+| `git reset`    | Undo staging      |
+| `git stash`    | Save temp changes |
+
+---
+
+## 📚 Glossary
+
+| Term     | What It Means             | When to Use            |
+| -------- | ------------------------- | ---------------------- |
+| Repo     | A project folder with Git | Always                 |
+| Commit   | A saved snapshot          | After staging changes  |
+| Staging  | Preparing for commit      | Before `git commit`    |
+| Push     | Upload to GitHub          | Sync local with remote |
+| Pull     | Download & merge          | Update local repo      |
+| Branch   | Parallel line of code     | Features, fixes        |
+| Merge    | Combine changes           | Feature complete       |
+| Clone    | Copy from GitHub          | Start a project        |
+| Fork     | Copy with history         | Contribute to others   |
+| HEAD     | Current commit pointer    | Git navigation         |
+| Upstream | Original remote repo      | Forking workflows      |
+
+---
+
+🧠 **Pro Tips:**
+
+* Commit often, use clear messages
+* Use branches for all new features
+* Always pull before pushing
+* Use `.gitignore` early
+* Name branches descriptively: `feature/`, `bugfix/`, `hotfix/`
+
+📎 Save this file as `README.md` in your repo for quick daily access!
+
+---
+
+🔗 Helpful Links:
+
+* [Git Cheat Sheet PDF](https://education.github.com/git-cheat-sheet-education.pdf)
+* [GitHub Docs](https://docs.github.com/en)
