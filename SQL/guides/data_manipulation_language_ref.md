@@ -1,4 +1,4 @@
-# 🧠 T-SQL Reference Guide
+# 🧠 MS SQL Data Manipulation Lanugage Reference Guide
 
 ## 📚 Table of Contents
 
