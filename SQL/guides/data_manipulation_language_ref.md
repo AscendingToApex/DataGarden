@@ -31,8 +31,7 @@
 * [🛠 Temporary Tables & CTEs](#-temporary-tables--ctes)  
 * [⏳ Window Functions](#-window-functions)  
 * [🧱 Creating & Modifying Tables](#-creating--modifying-tables)  
-* [🔁 Stored Procedures & Functions](#-stored-procedures--functions)  
-* [🚨 Error Handling & Transactions](#-error-handling--transactions)  
+* [🔁 Stored Procedures & Functions](#-stored-procedures--functions)   
 * [🗄️ Querying Metadata](#-querying-metadata)  
 * [🧠 Common T-SQL Commands](#-common-t-sql-commands)  
 * [📚 Glossary](#-glossary)  
@@ -658,22 +657,6 @@ SELECT OrderDate, Amount,
 
 ---
 
-## 🧱 Creating & Modifying Tables
-
-```sql
-CREATE TABLE dbo.Products (
-  ProductID INT IDENTITY PRIMARY KEY,
-  Name NVARCHAR(100) NOT NULL,
-  Price MONEY DEFAULT 0
-);
-
-ALTER TABLE dbo.Products ADD Stock INT NOT NULL DEFAULT 0;
-
-DROP TABLE dbo.Products;
-```
-
----
-
 ## 🔁 Stored Procedures & Functions
 
 ```sql
@@ -688,27 +671,6 @@ CREATE FUNCTION dbo.TopCustomers(@MinTotal MONEY) RETURNS TABLE AS RETURN
     FROM Sales.SalesOrderHeader
    GROUP BY CustomerID
   HAVING SUM(TotalDue)>@MinTotal;
-```
-
----
-
-## 🚨 Error Handling & Transactions
-
-```sql
-BEGIN TRAN;
-  UPDATE Accounts SET Balance -= 100 WHERE AccountID=1;
-  UPDATE Accounts SET Balance += 100 WHERE AccountID=2;
-COMMIT;
-
-BEGIN TRY
-  BEGIN TRAN;
-    -- statements --
-  COMMIT;
-END TRY
-BEGIN CATCH
-  ROLLBACK;
-  SELECT ERROR_NUMBER() AS ErrNum, ERROR_MESSAGE() AS ErrMsg;
-END CATCH;
 ```
 
 ---
@@ -786,16 +748,11 @@ SELECT COLUMNPROPERTY(OBJECT_ID(N'Sales.Orders'),'orderdate','Precision');
 | INSERT                          | Add new rows                            |
 | UPDATE                          | Modify existing rows                    |
 | DELETE                          | Remove rows                             |
-| CREATE TABLE                    | Define a new table                      |
-| ALTER TABLE                     | Change table schema                     |
-| DROP TABLE                      | Remove a table                          |
 | CREATE PROCEDURE                | Define a stored procedure               |
 | EXEC                            | Execute a procedure or statement        |
 | WITH (CTE)                      | Define a CTE                            |
 | ROW_NUMBER() OVER()             | Assign row numbers to result set        |
 | SUM(...) OVER()                 | Calculate running totals                |
-| BEGIN TRANSACTION / COMMIT      | Start and commit a transaction          |
-| ROLLBACK                        | Undo a transaction                      |
 
 ---
 
@@ -808,12 +765,10 @@ SELECT COLUMNPROPERTY(OBJECT_ID(N'Sales.Orders'),'orderdate','Precision');
 | Temp Table             | Session-scoped table for intermediate results            | Multi-step transformations              |
 | Window Function        | Calculation over sets of rows without `GROUP BY`         | Rankings, running totals                |
 | Inline TVF             | Table-valued function returning a rowset                 | Reusable set-based logic                |
-| TRY…CATCH              | Error handling construct                                 | Trap and handle runtime errors          |
 | Partition BY           | Divides window function result set by group              | Group-specific analytics                |
 | Non-Equi Join          | Join on non-equality conditions                          | Range or inequality-based joins         |
 | Composite Join         | Join matching multiple columns                           | Multi-column PK-FK relationships        |
 | Outer Join             | Preserves unmatched rows from one/both sides             | Missing-data detection, calendar tables |
-| Transaction            | Atomic block of statements                               | Critical data updates                   |
 
 ---
 
