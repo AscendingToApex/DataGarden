@@ -1,4 +1,4 @@
-# 🧠 MS SQL Data Manipulation Lanugage Reference Guide
+# 🧠 MS SQL Data Manipulation Language Reference Guide
 
 ## 📚 Table of Contents
 
