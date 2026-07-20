@@ -1,5 +1,7 @@
 # 🌊 Seaborn Reference Guide
 
+> 🟡 **Level:** Intermediate  ·  **Prerequisites:** [Matplotlib](matplotlib_ref.md)
+
 **Seaborn** is a statistical plotting library built on top of Matplotlib that works best with **Pandas DataFrames**. It makes attractive, informative statistical graphics with far less code than raw Matplotlib. This guide covers **choosing the right plot**, **styling** (styles, palettes, context), **distribution / categorical / relational / regression** plots, and multi-panel **grids**.
 
 > Mental model: Seaborn handles the *statistics and good defaults*; Matplotlib underneath still handles the *fine-tuning*. You'll use both together.

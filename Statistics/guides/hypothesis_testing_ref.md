@@ -1,5 +1,7 @@
 # 🔬 Hypothesis Testing Reference Guide
 
+> 🟡 **Level:** Intermediate  ·  **Prerequisites:** [Descriptive Statistics](descriptive_statistics_ref.md)
+
 Hypothesis testing is how we decide whether a pattern in a **sample** is real evidence about a **population**, or just chance. This guide covers the **logic** (null vs. alternative), **p-values**, **errors and power**, **confidence intervals**, and a **decision table** for picking the right test — parametric or nonparametric.
 
 > The core idea: a hypothesis test pits two competing claims against each other, and only one can win. We never *prove* the alternative true — we gather enough evidence to **reject the null**.

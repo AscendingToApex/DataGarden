@@ -1,5 +1,7 @@
 # 📏 ML Model Evaluation & Tuning Reference Guide
 
+> 🟡 **Level:** Intermediate  ·  **Prerequisites:** [ML Algorithms](ml_algorithms_ref.md)
+
 Training a model is only half the job — you have to **measure how good it is** and **tune it** without fooling yourself. This guide covers **train/test splits**, **cross-validation**, **classification metrics** (confusion matrix, precision, recall, F1, ROC AUC), **regression metrics** (RMSE, R²), and **hyperparameter tuning** (grid & randomized search).
 
 > The golden rule: never let the **test set** influence training or tuning decisions. Reserve it for one final, honest score.

@@ -1,5 +1,7 @@
 # 🧠 MS SQL Data Control Language Reference Guide
 
+> 🟡 **Level:** Intermediate  ·  **Prerequisites:** [SQL DML](data_manipulation_language_ref.md)
+
 ## 📚 Table of Contents
 
 * [👤 GRANT Permissions](#-grant-permissions)  

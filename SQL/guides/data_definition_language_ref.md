@@ -1,5 +1,7 @@
 # 🧠 MS SQL Data Definition Language Reference Guide
 
+> 🟡 **Level:** Intermediate  ·  **Prerequisites:** [SQL DML](data_manipulation_language_ref.md)
+
 ## 📚 Table of Contents
 * [🗂 Creating & Dropping Databases & Schemas](#-creating--dropping-databases--schemas)  
 * [🧱 Creating & Modifying Tables](#-creating--modifying-tables)  

@@ -1,5 +1,7 @@
 # 🖥️ Unix vs Windows Command Reference
 
+> 🟢 **Level:** Beginner  ·  **Prerequisites:** none
+
 This guide provides a comprehensive mapping of common Windows Command Prompt commands to their Unix/Linux shell equivalents, ideal for developers, system admins, and users switching environments.
 
 ---

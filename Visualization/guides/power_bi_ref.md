@@ -1,5 +1,7 @@
 # 📊 Power BI & Data Analytics Reference Guide
 
+> 🟡 **Level:** Intermediate  ·  **Prerequisites:** none
+
 **Power BI** is Microsoft's suite for turning scattered data sources into interactive, shareable dashboards. This guide covers the **types of analytics**, the **roles** on a data team, the **six tasks** of a data analyst, and the **building blocks** and **workflow** of Power BI itself.
 
 > Big idea: The value of data is unlocked by **telling a story** with it. Reports that tell that story help decision-makers act faster and more accurately.

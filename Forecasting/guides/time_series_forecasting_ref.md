@@ -1,5 +1,7 @@
 # 📉 Time Series Forecasting Reference Guide
 
+> 🟡 **Level:** Intermediate  ·  **Prerequisites:** [Pandas](../../Python/guides/pandas_ref.md), [Descriptive Statistics](../../Statistics/guides/descriptive_statistics_ref.md)
+
 **Forecasting** brings science to what's often a gut-feeling job — quantifying where a business is headed, spotting turning points, and uncovering opportunities. This guide covers **time-series concepts**, the **first steps** to prepare data, **seasonal decomposition**, and a tour of the main **forecasting models** (Holt-Winters, SARIMAX, TBATS, Prophet, XGBoost, and structural time series).
 
 > Core insight: **forecasting is all about error modeling.** Once you strip out trend and seasonality, the art is explaining what's left.

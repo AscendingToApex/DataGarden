@@ -1,5 +1,7 @@
 # 🧠 MS SQL Transaction Control Language Reference Guide
 
+> 🟡 **Level:** Intermediate  ·  **Prerequisites:** [SQL DML](data_manipulation_language_ref.md)
+
 ## 📚 Table of Contents
 * [📦 Begin, Commit & Rollback](#-begin-commit--rollback)  
 * [🎯 Savepoints](#-savepoints)  

@@ -1,9 +1,11 @@
 # 🧠 MS SQL Data Manipulation Language Reference Guide
 
+> 🟡 **Level:** Intermediate  ·  **Prerequisites:** none
+
 ## 📚 Table of Contents
 
 * [🛠 Getting Started with T-SQL](#-getting-started-with-t-sql)  
-* [🛡️ Best Practices](#️-best-practices)  
+* [🛡️ Best Practices](#-best-practices)  
 * [📌 USE Statement](#-use-statement)  
 * [🔍 SELECT Statement](#-select-statement)  
 * [📖 FROM Clause](#-from-clause)  
@@ -30,7 +32,6 @@
 * [➕ Multi-Join Queries](#-multi-join-queries)  
 * [🛠 Temporary Tables & CTEs](#-temporary-tables--ctes)  
 * [⏳ Window Functions](#-window-functions)  
-* [🧱 Creating & Modifying Tables](#-creating--modifying-tables)  
 * [🔁 Stored Procedures & Functions](#-stored-procedures--functions)   
 * [🗄️ Querying Metadata](#-querying-metadata)  
 * [🧠 Common T-SQL Commands](#-common-t-sql-commands)  

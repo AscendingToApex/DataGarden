@@ -1,5 +1,7 @@
 # ⚡ PySpark Reference Guide
 
+> 🟡 **Level:** Intermediate  ·  **Prerequisites:** [Pandas](../../Python/guides/pandas_ref.md), [SQL DML](../../SQL/guides/data_manipulation_language_ref.md)
+
 **Apache Spark** is a distributed engine for processing data too big for one machine, and **PySpark** is its Python API. This beginner-friendly guide covers the core ideas — the **SparkSession**, the two data abstractions (**RDDs** and **DataFrames**), common **transformations vs. actions**, and **Spark SQL**.
 
 > When to reach for Spark: your data no longer fits comfortably in Pandas/memory, or you need to run the same computation across a cluster. For small data, plain Pandas is simpler and faster.

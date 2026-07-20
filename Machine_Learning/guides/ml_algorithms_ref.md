@@ -1,5 +1,7 @@
 # 🧮 ML Algorithms Reference Guide
 
+> 🟡 **Level:** Intermediate  ·  **Prerequisites:** [ML Fundamentals](ml_fundamentals_ref.md)
+
 A beginner's map of the most common **supervised** learning algorithms — when to reach for each **classification** and **regression** model, plus a note on **unsupervised** methods. All examples use scikit-learn's uniform `fit` / `predict` interface.
 
 > How to choose: balance **dataset size**, **interpretability** (can you explain it to stakeholders?), and **flexibility** (fewer assumptions can mean higher accuracy but more data needed).
