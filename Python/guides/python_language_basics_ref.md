@@ -1,5 +1,7 @@
 # 🐍 Python Language Basics Reference Guide
 
+> 🟢 **Level:** Beginner  ·  **Prerequisites:** none
+
 A beginner-friendly tour of core Python: how programs are built from **objects**, the **built-in data types**, the four essential **data structures** (list, dict, set, tuple), and the building blocks of logic — **control flow**, **functions**, **iteration**, and **object-oriented programming**.
 
 > New to Python? Read top to bottom. Already comfortable? Jump to any section from the table of contents.

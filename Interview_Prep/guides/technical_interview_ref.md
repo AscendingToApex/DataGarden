@@ -1,5 +1,7 @@
 # 🎓 Technical Interview Prep Reference Guide
 
+> 🟡 **Level:** Intermediate  ·  **Prerequisites:** [SQL DML](../../SQL/guides/data_manipulation_language_ref.md), [Hypothesis Testing](../../Statistics/guides/hypothesis_testing_ref.md)
+
 A study companion for **data science / analytics** technical interviews, covering the three areas that come up most: **SQL**, **statistics**, and **probability**. Each section has worked concept questions plus a **practice bank** to test yourself.
 
 > How to use this: read the worked answers to refresh concepts, then cover the practice-bank answers and try them cold.

@@ -1,5 +1,7 @@
 # 🌐 Data Science Overview Reference Guide
 
+> 🟢 **Level:** Beginner  ·  **Prerequisites:** none
+
 A big-picture introduction to **what data science is** and **how data science work actually gets done** — the interdisciplinary skill set, the end-to-end process, the analytics maturity path, how to choose projects, and two classic frameworks (**Tom Khabaza's Nine Laws** and **CRISP-DM**).
 
 > Data science is inherently **interdisciplinary** — take away domain knowledge, computer science, *or* statistics, and the rest falls apart.

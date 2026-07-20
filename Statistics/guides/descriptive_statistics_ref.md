@@ -1,5 +1,7 @@
 # 📊 Descriptive Statistics Reference Guide
 
+> 🟢 **Level:** Beginner  ·  **Prerequisites:** none
+
 Descriptive statistics **summarize** and **describe** a dataset so you can see its shape and spread at a glance. This guide covers **central tendency** (mean, median, mode), **variability** (range, variance, standard deviation), **distribution shape** (skew, kurtosis), and **standard scores** (z-scores, t-scores).
 
 > Why it matters: Summary statistics are *tools we use to deliberately simplify* data so we can see past the cloud of individual points.

@@ -1,5 +1,7 @@
 # 💻 Notebooks & IDEs Reference Guide
 
+> 🟢 **Level:** Beginner  ·  **Prerequisites:** none
+
 Where you *write and run* your code matters. This beginner-friendly guide compares the main environments for Python data work — **Jupyter Notebook**, **Google Colab**, and the **Python / IPython terminal** — and covers the notebook basics (cells, modes, shortcuts, magic commands) that trip up newcomers.
 
 > A **notebook** interleaves code, output, and narrative text — ideal for exploration and sharing. The **terminal/script** approach is better for automation and production.

@@ -1,5 +1,7 @@
 # 🐼 Pandas Reference Guide
 
+> 🟢 **Level:** Beginner  ·  **Prerequisites:** [NumPy](numpy_ref.md)
+
 **Pandas** (short for *"panel data"*) is Python's go-to library for working with tables of data — think of it as a programmable spreadsheet or an in-memory database. It's built on NumPy and pairs with it constantly. This guide covers the two core objects (**Series** and **DataFrame**), everyday **operations**, working with **dates**, and how to **speed up** slow row-by-row loops.
 
 > Rule of thumb: Pandas shines when your data **fits in memory**. It gives you SQL-style filtering/joining, Excel-style pivots, and R-style NA handling — all in Python.

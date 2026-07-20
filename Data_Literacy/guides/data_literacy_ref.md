@@ -1,5 +1,7 @@
 # Data Literacy Handbook
 
+> 🟢 **Level:** Beginner  ·  **Prerequisites:** none
+
 ## Table of Contents
 
 1. [Overview](#overview)

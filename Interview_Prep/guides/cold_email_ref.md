@@ -1,5 +1,7 @@
 # ✉️ Cold Email & Job Search Reference Guide
 
+> 🟢 **Level:** Beginner  ·  **Prerequisites:** none
+
 Applying through a portal often isn't enough — a well-crafted **cold email** can get you in front of the right person. This guide covers **who to email**, **how to find their address**, **8 tips** for effective outreach, **timing**, and reusable **templates**.
 
 > A cold email's job is small and specific: get a human to notice you and start a conversation. Keep it short, relevant, and easy to say yes to.

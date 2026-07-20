@@ -1,5 +1,7 @@
 # 🔎 Data Wrangling & Exploration Reference Guide
 
+> 🟡 **Level:** Intermediate  ·  **Prerequisites:** [Data Cleaning](data_cleaning_ref.md)
+
 Once data is loaded and cleaned, you **reshape it** and **explore it** to find patterns. This guide covers **combining data** (adding rows/columns, merging), **indexing**, **summary statistics**, **GroupBy** aggregation, **pivot tables**, and quick **value counts** — the everyday tools of exploratory data analysis (EDA).
 
 > Wrangling = getting the table into the right shape. Exploration = asking it questions.

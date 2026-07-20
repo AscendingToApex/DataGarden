@@ -1,5 +1,7 @@
 # 🧠 Git & GitHub Reference Guide
 
+> 🟢 **Level:** Beginner  ·  **Prerequisites:** none
+
 ## 📚 Table of Contents
 
 * [🛠 Initial Setup on Windows](#-initial-setup-on-windows)

@@ -1,5 +1,7 @@
 # 📥 Data Collection & Ingestion Reference Guide
 
+> 🟢 **Level:** Beginner  ·  **Prerequisites:** [Pandas](../../Python/guides/pandas_ref.md)
+
 Before you can analyze anything, you have to **get the data in**. This guide is a practical map of how to load data into a Pandas DataFrame from **flat files**, **spreadsheets**, **statistical formats**, **databases**, the **cloud**, the **web**, and **APIs**.
 
 > The goal of every method below is the same: end up with a clean **DataFrame** you can work with.

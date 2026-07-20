@@ -1,5 +1,7 @@
 # 🛠️ ML Data Preparation Reference Guide
 
+> 🟡 **Level:** Intermediate  ·  **Prerequisites:** [ML Fundamentals](ml_fundamentals_ref.md), [Pandas](../../Python/guides/pandas_ref.md)
+
 Scikit-learn models need **numeric data with no missing values**. This guide covers the preprocessing steps that get raw data ready: **encoding categoricals**, **imputing missing values**, **scaling features**, and wrapping it all in **pipelines** to prevent data leakage.
 
 > Rule of thumb: whatever you learn from the data (a mean to impute, a scale to apply) must be learned from **training data only**, then applied to the test data — pipelines enforce this for you.

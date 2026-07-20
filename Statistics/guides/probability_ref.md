@@ -1,5 +1,7 @@
 # 🎲 Probability Reference Guide
 
+> 🟢 **Level:** Beginner  ·  **Prerequisites:** none
+
 A quick, beginner-friendly reference for the probability ideas that show up most in data science and interviews — the **basic rules**, **conditional probability**, and **Bayes' rule** (the one interviewers love to sneak in).
 
 > Interview tip: whenever a question asks for the probability of an event **"given that"** another event already happened, that's your cue to reach for **conditional probability / Bayes' rule**.

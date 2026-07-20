@@ -1,5 +1,7 @@
 # 📊 R Basics Reference Guide
 
+> 🟢 **Level:** Beginner  ·  **Prerequisites:** none
+
 **R** is a language built for statistics and data analysis, most often used through **RStudio**. This beginner-friendly guide covers the essentials: **variables and vectors**, **operators**, **packages**, **loading/saving data**, **special values**, **factors**, **data frames**, **lists**, and **formulas**.
 
 > Coming from Python? Two things to rewire immediately: R uses **`<-`** for assignment and **indexes from 1**, not 0.

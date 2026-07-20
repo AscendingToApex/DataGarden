@@ -1,8 +1,10 @@
 # 🤖 Machine Learning Fundamentals Reference Guide
 
+> 🟢 **Level:** Beginner  ·  **Prerequisites:** none
+
 **Machine Learning (ML)** is the science of programming computers so they can **learn from data** without being explicitly programmed. This guide covers *what ML is good for*, the **types of ML systems**, the **main challenges** (bad data and bad models), **testing/validation**, and the **vocabulary** you'll see everywhere.
 
-> New to ML? Start here, then move to the [project workflow](ml_project_workflow_ref.md), [algorithms](ml_algorithms_ref.md), and [evaluation](ml_model_evaluation_ref.md) guides.
+> New to ML? Start here, then move to the [project checklist](ml_project_checklist_ref.md), [data prep](ml_data_prep_ref.md), [algorithms](ml_algorithms_ref.md), and [evaluation](ml_model_evaluation_ref.md) guides.
 
 ## 📚 Table of Contents
 

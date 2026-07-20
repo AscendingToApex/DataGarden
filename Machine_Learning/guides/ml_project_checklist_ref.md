@@ -1,10 +1,12 @@
 # 🧠 Machine Learning Project Checklist Reference Guide
 
+> 🟡 **Level:** Intermediate  ·  **Prerequisites:** [ML Fundamentals](ml_fundamentals_ref.md)
+
 📚 Table of Contents  
 * [🎯 Frame the Problem and Look at the Big Picture](#-frame-the-problem-and-look-at-the-big-picture)  
 * [📥 Get the Data](#-get-the-data)  
 * [📊 Explore the Data](#-explore-the-data)  
-* [🛠️ Prepare the Data](#️-prepare-the-data)  
+* [🛠️ Prepare the Data](#-prepare-the-data)  
 * [🤖 Shortlist Promising Models](#-shortlist-promising-models)  
 * [🔧 Fine-Tune the System](#-fine-tune-the-system)  
 * [🚀 Present Your Solution](#-present-your-solution)  

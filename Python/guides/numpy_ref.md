@@ -1,5 +1,7 @@
 # 🔢 NumPy Reference Guide
 
+> 🟢 **Level:** Beginner  ·  **Prerequisites:** [Python Language Basics](python_language_basics_ref.md)
+
 **NumPy** ("Numerical Python") is the foundation of scientific computing in Python — nearly every data scientist uses it, and libraries like Pandas are built on top of it. This guide covers **arrays**, how to **create** them, **indexing & slicing**, fast **vectorized math (ufuncs)**, and **sorting**.
 
 > Why not just use lists? A NumPy **array** stores one data type in a compact block of memory, so operations run far faster than looping over a Python list.

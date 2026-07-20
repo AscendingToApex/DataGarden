@@ -1,5 +1,7 @@
 # 📈 Matplotlib Reference Guide
 
+> 🟢 **Level:** Beginner  ·  **Prerequisites:** [Pandas](../../Python/guides/pandas_ref.md)
+
 **Matplotlib** is the foundational plotting library for Python — most other Python viz tools (including Seaborn) are built on top of it. This guide covers the **two interfaces**, building **line, scatter, bar, histogram, pie**, and **statistical** plots, plus **styling** and **saving** figures.
 
 > Remember *why* you're plotting: a visualization exists to **communicate** something. As Kieran Healy puts it, charts are *tools* to deliberately simplify data so a reader can see past the cloud of points.

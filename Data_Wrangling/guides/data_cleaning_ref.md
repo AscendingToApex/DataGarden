@@ -1,5 +1,7 @@
 # 🧹 Data Cleaning & Prep Reference Guide
 
+> 🟢 **Level:** Beginner  ·  **Prerequisites:** [Pandas](../../Python/guides/pandas_ref.md)
+
 **"Garbage in, garbage out."** Real-world data is messy — wrong types, missing values, duplicates, outliers, and inconsistent text. This guide walks the cleaning pipeline: **inspect → fix types → handle missing data → drop duplicates → treat outliers → clean strings → standardize categories → bin**.
 
 > Cleaning is where most of a data project's time goes. Do it carefully and everything downstream gets easier.
