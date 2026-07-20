@@ -14,7 +14,7 @@ Hypothesis testing is how we decide whether a pattern in a **sample** is real ev
 * [❌ Type I & Type II Errors](#-type-i--type-ii-errors)
 * [📊 Standard Error & the CLT](#-standard-error--the-clt)
 * [🎯 Confidence Intervals](#-confidence-intervals)
-* [↔️ One- & Two-Tailed Tests](#-one--two-tailed-tests)
+* [↔️ One-Tailed vs. Two-Tailed Tests](#-one-tailed-vs-two-tailed-tests)
 * [🗺️ Choosing the Right Test](#-choosing-the-right-test)
 * [🐍 The Python Workflow](#-the-python-workflow)
 * [📚 Glossary](#-glossary)
@@ -126,7 +126,7 @@ $$\bar{x} \pm 1.96 \times SE$$
 
 ---
 
-## ↔️ One- & Two-Tailed Tests
+## ↔️ One-Tailed vs. Two-Tailed Tests
 
 | Alternative hypothesis          | Test        |
 |---------------------------------|-------------|
